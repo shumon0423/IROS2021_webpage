@@ -129,7 +129,7 @@
   <body>
     <br>
     <center>
-    <span style="font-size:42px"><a href="">Active Exploration and Mapping via <br /> Iterative Covariance Regulation over Continuous $SE(3)$ Trajectories</a></span>
+    <span style="font-size:42px"><a href="">Active Exploration and Mapping via <br /> Iterative Covariance Regulation over Continuous <i>SE(3)</i> Trajectories</a></span>
     
     </center>
 
@@ -194,28 +194,71 @@ This work develops <b>iterative Covariance Regulation</b> (iCR), a novel method 
     First, we consider the robot motion model by <i>SE(3)</i> pose kinematics and a nonlinear sensor model with an additive Gaussian noise. Under a Gaussian prior over the map state and its Bayesian evolution along a sensing trajectory, the differential entropy is proportional to the log determinant of the covariance matrix at the final time.
     
     Next, to ensure that the covariance matrix evolution is differentiable with respect to the control sequence, we introduce a new differentiable field of view formulation for the sensing model, providing a smooth transition from unobserved to observed space in the environment.
+    
+                <tr>
+            <td width=720px>
+              <center>
+                  <img src = "./assets/background.png" height="10px"></img>
+            </center>
+            </td>
+            </tr>
+    
         <tr>
         <td width=720px>
           <center>
-              <a><img src = "./assets/DFOV.png" height="345px"></img></a><br>
+              <a><img src = "./assets/DFOV.png" height="300px"></img></a><br>
         </center>
         </td>
         </tr>
+        
+                    <tr>
+            <td width=720px>
+              <center>
+                  <img src = "./assets/background.png" height="10px"></img>
+            </center>
+            </td>
+            </tr>
+        
         Finally, an optimal control sequence is obtained by the explicit gradient descent, through an iteration of forward-backward gradient computation to optimize multi-step control input sequences over the <i>SE(3)</i> pose kinematics.
+        
+            <tr>
+            <td width=720px>
+              <center>
+                  <img src = "./assets/background.png" height="10px"></img>
+            </center>
+            </td>
+            </tr>
+        
         <tr>
         <td width=720px>
           <center>
-              <a><img src = "./assets/iCR.gif" height="345px"></img></a><br>
+              <a><img src = "./assets/iCR.png" height="400px"></img></a><br>
         </center>
         </td>
         </tr>
+
+            <tr>
+            <td width=720px>
+              <center>
+                  <img src = "./assets/background.png" height="10px"></img>
+            </center>
+            </td>
+            </tr>
 
         Along with the obtained optimal robot trajectory, an occupancy grid map is constructed by implementing Extended Kalman Filter.
 
             <tr>
             <td width=720px>
               <center>
-                  <a><img src = "./assets/mapping.GIF" height="345px"></img></a><br>
+                  <img src = "./assets/background.png" height="20px"></img>
+            </center>
+            </td>
+            </tr>
+
+           <tr>
+            <td width=720px>
+              <center>
+                  <img src = "./assets/map_1.GIF" height="300px"></img> <img src = "./assets/background.png" height="10px"></img> <img src = "./assets/map_2.GIF" height="300px"></img>
             </center>
             </td>
             </tr>
@@ -224,7 +267,7 @@ This work develops <b>iterative Covariance Regulation</b> (iCR), a novel method 
             <tr>
             <td width=720px>
               <center>
-                  <img src = "./assets/res1.png" height="235px"></img> <img src = "./assets/res2.png" height="235px"></img>
+                  <img src = "./assets/res1.png" height="250px"></img> <img src = "./assets/background.png" height="10px"></img> <img src = "./assets/res2.png" height="250px"></img>
             </center>
             </td>
             </tr>
